@@ -105,6 +105,10 @@
         .accordion.active .accordion-content {
             max-height: 300px;
         }
+        .realtime-panel {
+            background-color: #1A1F36;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
         .chat-message {
             opacity: 0;
             transform: translateY(10px);
@@ -238,7 +242,7 @@
     </div>
 
     <!-- Destaque Especial -->
-    <div class="glass-card rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
+        <div class="glass-card realtime-panel rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
             <h3 class="text-2xl font-bold mb-4 text-light">Painel de Acompanhamento em Tempo Real</h3>
             <p class="text-gray-400 mb-6">
@@ -266,7 +270,7 @@
             </ul>
         </div>
         <div class="relative">
-            <div class="bg-gradient-to-br from-dark to-primary rounded-xl overflow-hidden border border-gray-700 p-4">
+            <div class="bg-primary rounded-xl overflow-hidden border border-gray-700 p-4">
                 <div class="bg-primary p-3 rounded-lg mb-4">
                     <div class="flex items-center mb-3">
                         <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-dark mr-3">
@@ -434,7 +438,7 @@
                 </button>
 
                 <div id="empresa-form-message" class="hidden mt-4 p-4 rounded-lg bg-emerald-900/40 border border-emerald-500 text-emerald-200 text-sm text-left">
-                    <h3 class="text-lg font-semibold mb-1">Pronto para transformar a forma como você trabalha?</h3>
+                    <h3 class="text-lg font-semibold mb-1">Formulário Enviado!</h3>
                     <p>Recebemos os dados da sua empresa. Em breve entraremos em contato para o próximo passo da configuração.</p>
                 </div>
             </form>
@@ -442,7 +446,7 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32">
+    <section id="faq" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-br from-primary to-dark text-light transition-colors dark:bg-dark dark:text-light">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">Perguntas Frequentes</h2>
@@ -517,7 +521,7 @@
                         type="email"
                         required
                         placeholder="Insira seu e-mail"
-                        class="w-full px-5 py-4 rounded-full bg-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-accent"
+                        class="w-full px-5 py-4 rounded-full bg-light dark:bg-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-accent"
                     >
                     <button
                         type="submit"
@@ -529,7 +533,7 @@
             </div>
 
             <div id="duvida-form-message" class="hidden mt-6 max-w-lg mx-auto p-4 rounded-lg bg-emerald-900/40 border border-emerald-500 text-emerald-200 text-sm">
-                <h3 class="text-lg font-semibold mb-1">Pronto para transformar a forma como você trabalha?</h3>
+                <h3 class="text-lg font-semibold mb-1">Formulário Enviado!</h3>
                 <p>Sua dúvida foi enviada com sucesso. Em breve retornaremos no e-mail informado.</p>
             </div>
         </div>
