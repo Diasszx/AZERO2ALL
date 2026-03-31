@@ -109,6 +109,14 @@
             background-color: #1A1F36;
             border: 1px solid rgba(255,255,255,0.08);
         }
+        #faq .feature-card {
+            background-color: #1A1F36 !important;
+            color: #FFFFFF !important;
+        }
+        #faq .feature-card h4,
+        #faq .feature-card p {
+            color: #FFFFFF !important;
+        }
         .chat-message {
             opacity: 0;
             transform: translateY(10px);
@@ -371,10 +379,10 @@
     </section>
 
     <!-- Cadastro da Empresa -->
-    <section id="pricing" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-b from-dark/60 to-primary/30">
+    <section id="pricing" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-br from-blue-500 via-sky-500 to-indigo-600 text-white transition-colors dark:from-primary dark:via-primary dark:to-dark dark:text-light">
         <div class="max-w-3xl mx-auto text-center mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold mb-6">Cadastro da Empresa</h2>
-            <p class="text-lg text-gray-400">
+            <p class="text-lg text-white dark:text-white">
                 Preencha os dados abaixo para iniciarmos sua configuração no Azero Ponto.
             </p>
         </div>
@@ -446,7 +454,7 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-br from-primary to-dark text-light transition-colors dark:bg-dark dark:text-light">
+    <section id="faq" class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-white text-dark transition-colors dark:bg-dark dark:text-light">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">Perguntas Frequentes</h2>
@@ -456,7 +464,7 @@
             </div>
             
             <div class="space-y-4">
-                <div class="accordion glass-card rounded-xl p-6">
+                <div class="accordion feature-card bg-primary dark:bg-primary rounded-xl p-6 border border-transparent hover:border-accent transition hover:border-opacity-100">
                     <button class="accordion-header w-full flex justify-between items-center text-left">
                         <h4 class="font-bold text-lg">Posso registrar meu ponto fora da empresa?</h4>
                         <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
@@ -468,7 +476,7 @@
                     </div>
                 </div>
                 
-                <div class="accordion glass-card rounded-xl p-6">
+                <div class="accordion feature-card bg-primary dark:bg-primary rounded-xl p-6 border border-transparent hover:border-accent transition hover:border-opacity-100">
                     <button class="accordion-header w-full flex justify-between items-center text-left">
                         <h4 class="font-bold text-lg">Esqueci de bater o ponto. O que devo fazer?</h4>
                         <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
@@ -480,7 +488,7 @@
                     </div>
                 </div>
                 
-                <div class="accordion glass-card rounded-xl p-6">
+                <div class="accordion feature-card bg-primary dark:bg-primary rounded-xl p-6 border border-transparent hover:border-accent transition hover:border-opacity-100">
                     <button class="accordion-header w-full flex justify-between items-center text-left">
                         <h4 class="font-bold text-lg">Como acompanho minhas horas trabalhadas?</h4>
                         <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
@@ -492,7 +500,7 @@
                     </div>
                 </div>
                 
-                <div class="accordion glass-card rounded-xl p-6">
+                <div class="accordion feature-card bg-primary dark:bg-primary rounded-xl p-6 border border-transparent hover:border-accent transition hover:border-opacity-100">
                     <button class="accordion-header w-full flex justify-between items-center text-left">
                         <h4 class="font-bold text-lg">Posso editar meu ponto depois de registrado?</h4>
                         <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
