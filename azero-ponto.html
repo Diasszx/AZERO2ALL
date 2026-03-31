@@ -53,6 +53,19 @@
             border: 1px solid rgba(14, 246, 204, 0.2);
         }
 
+        body:not(.dark) input,
+        body:not(.dark) textarea,
+        body:not(.dark) select {
+            color: #FFFFFF;
+        }
+
+        body:not(.dark) input::placeholder,
+        body:not(.dark) textarea::placeholder,
+        body:not(.dark) select::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+            opacity: 1;
+        }
+
         .hero-bg {
             background: linear-gradient(135deg, #1e3a5a 0%, #3b82f6 100%);
             }
@@ -517,10 +530,10 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-br from-primary to-dark text-center">
+    <section class="py-20 px-4 sm:px-10 lg:px-20 xl:px-32 bg-gradient-to-br from-blue-500 via-sky-500 to-indigo-600 text-center">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ainda tem dúvidas?</h2>,
-            <p class="text-gray-400 mb-6">Nossa equipe fica feliz em responder! Normalmente respondemos em 1 dia útil.</p>
+            <p class="text-black dark:text-gray-300 mb-6">Nossa equipe fica feliz em responder! Normalmente respondemos em 1 dia útil.</p>
             
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 max-w-lg mx-auto">
                 <form id="duvida-form" class="relative flex-grow">
@@ -548,7 +561,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-16 px-4 sm:px-10 lg:px-20 xl:px-32 bg-dark">
+    <footer class="py-16 px-4 sm:px-10 lg:px-20 xl:px-32 bg-white text-dark">
         <div class="grid grid-cols-2 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
             <div class="col-span-2">
                 <h3 class="text-2xl font-bold bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent mb-4">AZERO</h3>
@@ -605,12 +618,12 @@
             </div> -->
         </div>
         
-        <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-500 mb-4 md:mb-0">© 2023 NeuraFlow. All rights reserved.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-500 hover:text-accent transition">Privacy Policy</a>
-                <a href="#" class="text-gray-500 hover:text-accent transition">Terms of Service</a>
-                <a href="#" class="text-gray-500 hover:text-accent transition">Cookie Policy</a>
+        <div class="border-t border-gray-300 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-black dark:text-gray-500 mb-4 md:mb-0">© 2023 NeuraFlow. All rights reserved.</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <a href="#" class="text-black dark:text-gray-500 hover:text-accent transition">Privacy Policy</a>
+                <a href="#" class="text-black dark:text-gray-500 hover:text-accent transition">Terms of Service</a>
+                <a href="#" class="text-black dark:text-gray-500 hover:text-accent transition">Cookie Policy</a>
             </div>
         </div>
     </footer>
