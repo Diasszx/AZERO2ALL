@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azero - Soluções Tecnológicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="smooth-scroll font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-900">AZERO</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Início</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-600 transition">Produtos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contato</a>
+                </nav>
+                <a href="#contact" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300">
+                    Fale Conosco
+                </a>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-gray-700"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Início</a>
+                <a href="#products" class="block py-2 text-gray-700 hover:text-blue-600">Produtos</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contato</a>
+                <a href="#contact" class="mt-2 w-full block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300 text-center">
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Transformando ideias em soluções tecnológicas completas
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Tecnologia inovadora para impulsionar seu negócio
+                    </p>
+                    <a href="#products" class="inline-block bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition duration-300">
+                        Conheça Nossas Soluções
+                    </a>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/technology/1024x576/1" alt="Tecnologia Azero" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre a Azero</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A Azero cria sistemas completos, da análise ao desenvolvimento final, para otimizar processos e impulsionar negócios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossas Soluções</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça nossos produtos desenvolvidos para otimizar e automatizar seus processos.
+                </p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover h-full">
+                        <img src="http://static.photos/office/640x360/1" alt="Azero Ponto" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Azero Ponto</h3>
+                            <p class="text-gray-600 mb-6">
+                                Sistema inteligente para bater ponto, ideal para empresas que buscam controle de jornada simples e eficiente.
+                            </p>
+                            <a href="azero-ponto.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300">
+                                Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar seu negócio?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Entre em contato conosco e descubra como nossas soluções podem ajudar sua empresa.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition duration-300">
+                Fale com Nossa Equipe
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tem alguma dúvida ou quer saber mais sobre nossos serviços? Envie uma mensagem!
+                </p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0" data-aos="fade-right">
+                    <form class="bg-gray-50 p-8 rounded-xl">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full lg:w-1/2 px-4" data-aos="fade-left">
+                    <div class="bg-gray-50 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Informações de Contato</h3>
+                        <div class="flex items-start mb-6">
+                            <div class="text-blue-600 mr-4">
+                                <i data-feather="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Endereço</h4>
+                                <p class="text-gray-600">Av. Paulista, 1000 - São Paulo/SP</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <div class="text-blue-600 mr-4">
+                                <i data-feather="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">E-mail</h4>
+                                <p class="text-gray-600">contato@azero.com.br</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <div class="text-blue-600 mr-4">
+                                <i data-feather="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Telefone</h4>
+                                <p class="text-gray-600">(11) 9999-9999</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-gray-800 mb-4">Siga-nos</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                                    <i data-feather="facebook" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                                    <i data-feather="instagram" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                                    <i data-feather="linkedin" class="w-6 h-6"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold">AZERO</span>
+                    <p class="text-gray-400 mt-2">Soluções tecnológicas inovadoras</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="mb-4 md:mb-0 md:mr-8">
+                        <h4 class="font-semibold mb-2">Links Rápidos</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li>
+                            <li><a href="#products" class="text-gray-400 hover:text-white transition">Produtos</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i data-feather="facebook" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i data-feather="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i data-feather="linkedin" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Azero. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Feather icons replacement
+        feather.replace();
+    </script>
+</body>
+</html>
